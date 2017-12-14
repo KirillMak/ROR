@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Your diary</title>
+  <style type="text/css">
+    html, body {
+      height: 100%; /* высота HTML и BODY */
+      margin: 0; /* убираем поля по краям страницы */
+      padding: 0;
+    }
+    body {
+      font-size: 2em;
+      color: #000;
+      background: #fff;
+    }
+    #wrapper {
+      min-height: 100%; /* минимальная высота обертки */
+      height: auto !important; /* для всех браузеров (можно убрать, если поддержка IE6 не нужна) */
+      height: 100%; /* для IE6, т.к. он понимает height, как min-height */
+      position: relative; /* позиционируем относительно этого блока */
+    }
+    header {
+      background: #fc0;
+    }
+    #menu {
+      width: 250px;
+      background: #0fc;
+      float: left;
+      padding-bottom: 100px; /* нижний внутренний отступ у меню */
+    }
+    #content {
+      background: #eee;
+      margin-left: 250px;
+      margin-right:200px;
+      padding-bottom: 100px; /* нижний внутренний отступ у контента */
+    }
+
+    aside {
+      background: yellow;
+      float:right;
+      width: 200px;
+      padding-bottom: 100px;
+      height:inherit;
+    }
+    .clear {
+      clear: both; /* класс для прерывания обтекания */
+    }
+    #footer {
+      width: 100%; /* ширина футера */
+      height: 100px; /* высота */
+      position: absolute; /* абсолютное позиционирование */
+      bottom: 0; /* прижимаем к нижнему краю обертки */
+      color: #fff;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <header>Шапка
+      <!--<a href = %main_signin_path%>Регистрация</a>-->
+      <%= link_to "Регистрация", main_signin_path, remote: true %>
+  </header>
+  <div id="menu">test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+
+  </div>
+  <aside>testteststese</aside>
+  <div id="content">test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test test test test test
+</div>
+
+  <div class="clear"></div>
+  <div id="footer">Футер</div>
+</div>
+</body>
+</html>
